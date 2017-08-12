@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Sample from './Sample';
-import { getRandomTitle, i18n, embraceWithCode } from './utils';
+import { getRandomTitle, i18n, i18nCtrl, embraceWithCode } from './utils';
 
 class App extends Component {
   constructor() {
     super();
-    this.state = {samples: []};
+    this.state = {samples: [], loadedLocale: 'en'};
   }
 
   addSample() {
@@ -16,6 +16,13 @@ class App extends Component {
         <Sample key={this.state.samples.length} addTitle={getRandomTitle()} />
       ])
     });
+  }
+
+  loadRussianLocale() {
+    i18nCtrl.setLocale('ru', (localeName) => {
+      this.setState({samples: this.state.samples, loadedLocale: localeName});
+      this.forceUpdate();
+    }, (error) => console.log(error));
   }
   
   render() {
@@ -29,7 +36,12 @@ class App extends Component {
           {embraceWithCode(i18n._t('To get started, edit `src/App.js` and save to reload.'))}
         </p>
         <div>
-          <button onClick={() => this.addSample()}>{i18n._t('Add new sample block!')}</button>
+        <button onClick={() => this.addSample()}>{i18n._t('Add new sample block!')}</button>
+        {
+          this.state.loadedLocale !== 'ru'
+            ? <button onClick={() => this.loadRussianLocale()}>{i18n._t('Load Russian locale')}</button>
+            : null
+        }
           <div>{i18n._nt([
             'Now we have %% component on page!',
             'Now we have %% components on page!'

@@ -4,7 +4,11 @@ import { TranslationController, TranslationProvider } from 'i18n-dialect';
 // ------- i18n related
 
 export const i18nCtrl = new TranslationController(
-  (lang) => {}, // translationGetter
+  (lang, onReady) => { // translationGetter
+    fetch('/ru.json')
+      .then((response) => response.text())
+      .then((contents) => onReady(lang, contents));
+  },
   (e) => console.error(e), // onFailedSubstitution 
   (n) => n != 1 // defaultPluralSelect -> english
 );
