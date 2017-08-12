@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "i18n-dialect": "^1.0.2",
+    "i18n-json-po": "^1.0.7",
+    "i18n-po-json": "^1.0.5",
+    "i18n-stex": "^1.0.9",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-scripts": "1.0.11"

@@ -1315,6 +1315,13 @@ cli-width@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/cli-width/-/cli-width-2.1.0.tgz#b234ca209b29ef66fc518d9b98d5847b00edf00a"
 
+cli@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/cli/-/cli-1.0.1.tgz#22817534f24bfa4950c34d532d48ecbc621b8c14"
+  dependencies:
+    exit "0.1.2"
+    glob "^7.1.1"
+
 cliui@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/cliui/-/cliui-2.1.0.tgz#4b475760ff80264c762c3a1719032e91c7fea0d1"
@@ -2307,6 +2314,10 @@ execa@^0.7.0:
     signal-exit "^3.0.0"
     strip-eof "^1.0.0"
 
+exit@0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/exit/-/exit-0.1.2.tgz#0632638f8d877cc82107d30a0fff1a17cba1cd0c"
+
 expand-brackets@^0.1.4:
   version "0.1.5"
   resolved "https://registry.yarnpkg.com/expand-brackets/-/expand-brackets-0.1.5.tgz#df07284e342a807cd733ac5af72411e581d1177b"
@@ -2966,6 +2977,29 @@ http-signature@~1.1.0:
 https-browserify@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-0.0.1.tgz#3f91365cabe60b77ed0ebba24b454e3e09d95a82"
+
+i18n-dialect@^1.0.2:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/i18n-dialect/-/i18n-dialect-1.0.3.tgz#cd1724b37d2583bf3bd69206b974cd70e14f0eb9"
+
+i18n-json-po@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/i18n-json-po/-/i18n-json-po-1.0.7.tgz#1afeef4373138f8fa60faa66f01a41eac0e891d3"
+  dependencies:
+    cli "^1.0.1"
+
+i18n-po-json@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/i18n-po-json/-/i18n-po-json-1.0.5.tgz#d6c8d357bdec672d09de38b2447960ca24cb0f23"
+  dependencies:
+    cli "^1.0.1"
+
+i18n-stex@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/i18n-stex/-/i18n-stex-1.0.9.tgz#cde638d2c4ed14dc1ec178aaf84162cb28cc4d7a"
+  dependencies:
+    cli "^1.0.1"
+    glob "^7.1.2"
 
 iconv-lite@0.4.13:
   version "0.4.13"
@@ -4989,7 +5023,7 @@ react-dev-utils@^3.1.0:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-react-dom@15.6.1:
+react-dom@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.6.1.tgz#2cb0ed4191038e53c209eb3a79a23e2a4cf99470"
   dependencies:
@@ -5052,7 +5086,7 @@ react-scripts@1.0.11:
   optionalDependencies:
     fsevents "1.1.2"
 
-react@15.6.1:
+react@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/react/-/react-15.6.1.tgz#baa8434ec6780bde997cdc380b79cd33b96393df"
   dependencies:

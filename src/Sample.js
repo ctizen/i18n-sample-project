@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Sample.css';
+import { i18n } from './utils';
 
 class Sample extends Component {
   render() {
@@ -7,10 +8,10 @@ class Sample extends Component {
     return (
       <div className="Sample">
         <div className="Sample-header">
-          <h2>Sample component: {addTitle}</h2>
+          <h2>{i18n._t('Sample component: %1', [addTitle])}</h2>
         </div>
         <p className="Sample-body">
-          You can place as many sample components on the page as you wish.
+          {i18n._t('You can place as many sample components on the page as you wish.')}
         </p>
       </div>
     );

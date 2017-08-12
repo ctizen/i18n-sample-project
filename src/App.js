@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Sample from './Sample';
-import { getRandomTitle } from './utils';
+import { getRandomTitle, i18n } from './utils';
 
 class App extends Component {
   constructor() {
@@ -23,14 +23,17 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <h2>{i18n._t('Welcome to React')}</h2>
         </div>
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <div>
-          <button onClick={() => this.addSample()}>Add new sample block!</button>
-          <div>Now we have {this.state.samples.length} components on page!</div>
+          <button onClick={() => this.addSample()}>{i18n._t('Add new sample block!')}</button>
+          <div>{i18n._nt([
+            'Now we have %% component on page!',
+            'Now we have %% components on page!'
+          ], this.state.samples.length)}</div>
         </div>
         <div>
           {this.state.samples}
