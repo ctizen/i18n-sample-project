@@ -7,3 +7,7 @@ extract:
 make_ru_json:
 	./node_modules/.bin/pojson -s l10n/ru.po -o l10n/ru.json
 
+merge_po:
+	msgmerge l10n/ru.po l10n/messages.pot -U
+	rm l10n/ru.po~
+

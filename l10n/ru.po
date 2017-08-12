@@ -2,20 +2,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: test project\n"
 "Report-Msgid-Bugs-To: test@l10n.com\n"
-"POT-Creation-Date: 2017-08-12 13:36+0300\n"
+"POT-Creation-Date: 2017-08-12 13:54+0300\n"
 "PO-Revision-Date: 2017-08-12 13:38+0300\n"
 "Last-Translator: Lingua Cat <cat@i18n.com>\n"
-"Language: ru_RU\n"
 "Language-Team: Russian <ru@li.org>\n"
+"Language: ru_RU\n"
 "MIME-Version: 1.0\n"
-"Plural-Forms: nplurals=3; plural=n % 10 == 1 && n % 100 != 11 ? 0 : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20) ? 1 : 2 \n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n % 10 == 1 && n % 100 != 11 ? 0 : n % 10 "
+">= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20) ? 1 : 2 \n"
 "Generated-By: i18n-json2po\n"
 
 #: src/App.js:26:16
 msgid "Welcome to React"
 msgstr "Добро пожаловать в React"
+
+#: src/App.js:29:28
+msgid "To get started, edit `src/App.js` and save to reload."
+msgstr "Чтобы начать, отредактируйте файл `src/App.js` и сохраните его - страница перезагрузится автоматически"
 
 #: src/App.js:32:53
 msgid "Add new sample block!"
@@ -34,44 +39,46 @@ msgstr "Сэмпловый компонент: %1"
 
 #: src/Sample.js:14:12
 msgid "You can place as many sample components on the page as you wish."
-msgstr "Вы можете разместить на странице столько сэмпловых компонентов, сколько захотите."
+msgstr ""
+"Вы можете разместить на странице столько сэмпловых компонентов, сколько "
+"захотите."
 
-#: src/utils.js:16:3
+#: src/utils.js:17:3
 msgctxt "Random titles"
 msgid "John"
 msgstr "Джон"
 
-#: src/utils.js:17:3
+#: src/utils.js:18:3
 msgctxt "Random titles"
 msgid "Mary"
 msgstr "Мэри"
 
-#: src/utils.js:18:3
+#: src/utils.js:19:3
 msgctxt "Random titles"
 msgid "Bob"
 msgstr "Боб"
 
-#: src/utils.js:19:3
+#: src/utils.js:20:3
 msgctxt "Random titles"
 msgid "Alice"
 msgstr "Элис"
 
-#: src/utils.js:20:3
+#: src/utils.js:21:3
 msgctxt "Random titles"
 msgid "Charlie"
 msgstr "Чарли"
 
-#: src/utils.js:21:3
+#: src/utils.js:22:3
 msgctxt "Random titles"
 msgid "Kate"
 msgstr "Кейт"
 
-#: src/utils.js:22:3
+#: src/utils.js:23:3
 msgctxt "Random titles"
 msgid "Lynn"
 msgstr "Линн"
 
-#: src/utils.js:23:3
+#: src/utils.js:24:3
 msgctxt "Random titles"
 msgid "Bill"
 msgstr "Билл"

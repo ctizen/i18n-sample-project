@@ -1,3 +1,4 @@
+import React from 'react';
 import { TranslationController, TranslationProvider } from 'i18n-dialect';
 
 // ------- i18n related
@@ -25,4 +26,16 @@ const titles = [
 
 export function getRandomTitle() {
   return titles[Math.floor(Math.random() * titles.length)];
+}
+
+// Primitive macro which outputs hyperscript
+export function embraceWithCode(string) {
+  let pieces = string.split('`');
+  let output = [];
+  for (let i = 0; i < pieces.length; i+=2) {
+    output.push(pieces[i]);
+    output.push(<code>{pieces[i + 1]}</code>);
+  }
+
+  return output;
 }

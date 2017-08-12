@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Sample from './Sample';
-import { getRandomTitle, i18n } from './utils';
+import { getRandomTitle, i18n, embraceWithCode } from './utils';
 
 class App extends Component {
   constructor() {
@@ -26,7 +26,7 @@ class App extends Component {
           <h2>{i18n._t('Welcome to React')}</h2>
         </div>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          {embraceWithCode(i18n._t('To get started, edit `src/App.js` and save to reload.'))}
         </p>
         <div>
           <button onClick={() => this.addSample()}>{i18n._t('Add new sample block!')}</button>
