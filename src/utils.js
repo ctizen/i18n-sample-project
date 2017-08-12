@@ -17,18 +17,18 @@ export const i18n = new TranslationProvider(i18nCtrl);
 
 // -------- App related
 
-const titles = [
-  i18n._pt('Random titles', "John"),
-  i18n._pt('Random titles', "Mary"),
-  i18n._pt('Random titles', "Bob"),
-  i18n._pt('Random titles', "Alice"),
-  i18n._pt('Random titles', "Charlie"),
-  i18n._pt('Random titles', "Kate"),
-  i18n._pt('Random titles', "Lynn"),
-  i18n._pt('Random titles', "Bill")
-];
-
 export function getRandomTitle() {
+  const titles = [ // Should be evaluated each time, otherwise localized names will not be shown
+    i18n._pt('Random titles', "John"),
+    i18n._pt('Random titles', "Mary"),
+    i18n._pt('Random titles', "Bob"),
+    i18n._pt('Random titles', "Alice"),
+    i18n._pt('Random titles', "Charlie"),
+    i18n._pt('Random titles', "Kate"),
+    i18n._pt('Random titles', "Lynn"),
+    i18n._pt('Random titles', "Bill")
+  ];
+
   return titles[Math.floor(Math.random() * titles.length)];
 }
 

@@ -12,9 +12,8 @@ class App extends Component {
 
   addSample() {
     this.setState({
-      samples: this.state.samples.concat([
-        <Sample key={this.state.samples.length} addTitle={getRandomTitle()} />
-      ])
+      samples: this.state.samples.concat([getRandomTitle()]),
+      loadedLocale: this.state.loadedLocale
     });
   }
 
@@ -48,7 +47,12 @@ class App extends Component {
           ], this.state.samples.length)}</div>
         </div>
         <div>
-          {this.state.samples}
+          {/* 
+               Note: addTitles inside Sample components will not be updated 
+               on locale change, because their values are stored in parent 
+               component's local state.
+          */}
+          {this.state.samples.map((value, idx) => <Sample key={idx} addTitle={value} />)}
         </div>
       </div>
     );

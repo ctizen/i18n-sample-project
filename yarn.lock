@@ -2979,8 +2979,8 @@ https-browserify@0.0.1:
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-0.0.1.tgz#3f91365cabe60b77ed0ebba24b454e3e09d95a82"
 
 i18n-dialect@^1.0.2:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/i18n-dialect/-/i18n-dialect-1.0.3.tgz#cd1724b37d2583bf3bd69206b974cd70e14f0eb9"
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/i18n-dialect/-/i18n-dialect-1.0.4.tgz#00521aadbe1a91140c6c8646b46d021518204f3a"
 
 i18n-json-po@^1.0.7:
   version "1.0.7"
