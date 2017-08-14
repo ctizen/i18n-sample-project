@@ -45,6 +45,10 @@ class App extends Component {
             'Now we have %% component on page!',
             'Now we have %% components on page!'
           ], this.state.samples.length)}</div>
+          <div>{i18n._ngg([
+            'This counter of %% component will not be translated',
+            'This counter of %% components will not be translated'
+          ], this.state.samples.length)}</div>
         </div>
         <div>
           {/* 
