@@ -10,7 +10,7 @@ export const i18nCtrl = new TranslationController(
       .then((contents) => onReady(lang, contents));
   },
   (e) => console.error(e), // onFailedSubstitution 
-  (n) => n != 1 // defaultPluralSelect -> english
+  (n) => n !== 1 ? 1 : 0 // defaultPluralSelect -> english
 );
 
 export const i18n = new TranslationProvider(i18nCtrl);

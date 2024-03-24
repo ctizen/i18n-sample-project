@@ -1,20 +1,42 @@
 {
   "name": "i18n-sample-project",
-  "version": "0.1.0",
+  "version": "2.0.0",
   "private": true,
   "dependencies": {
-    "i18n-dialect": "^1.0.2",
-    "i18n-json-po": "^1.0.7",
-    "i18n-po-json": "^1.0.5",
-    "i18n-stex": "^1.0.9",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-scripts": "1.0.11"
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "i18n-dialect": "https://github.com/ctizen/i18n-dialect",
+    "i18n-json-po": "https://github.com/ctizen/i18n-json-po",
+    "i18n-po-json": "https://github.com/ctizen/i18n-po-json",
+    "i18n-stex": "https://github.com/ctizen/stex",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
